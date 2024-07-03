@@ -29,6 +29,7 @@ const About = () => {
       <center>
         <h2>My Skills</h2>
       </center>
+      <div className={styles["skillsArea"]}>
       <div className={styles["skills"]}>
         <div className={styles["language"]}>
           <img src="./images/html.png" alt="" />
@@ -80,6 +81,7 @@ const About = () => {
           <p>C</p>
         </div>
       </div>
+    </div>
     </div>
   );
 };
