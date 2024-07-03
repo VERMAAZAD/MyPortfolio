@@ -38,7 +38,7 @@ const Header = () => {
         </div>
       </div>
       <div className={styles["sticky"]}>
-        <div className={styles["slidebar"]}>
+        {/* <div className={styles["slidebar"]}>
           <ul>
             {Burger.map(({ title, id, link, iClass }) => {
               return (
@@ -60,7 +60,7 @@ const Header = () => {
               );
             })}
           </ul>
-        </div>
+        </div> */}
       </div>
     </div>
   );
