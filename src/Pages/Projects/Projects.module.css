@@ -1,7 +1,11 @@
 .projectSection{
     margin: 4% 10%;
-    /* height: 100vh; */
     color: white;
+}
+.projectSection h1{
+    border-bottom: 4px solid #d97f12;
+    display: inline-block;
+    margin-bottom: 20px;
 }
 .project{
     border: 1px solid red;
@@ -12,8 +16,19 @@
     color: white;
 }
 .allproject{
+    width: 100%;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-evenly;
+}
+@media only screen and (max-width: 576px){
+    .projectSection{
+        margin: 4%;
+    }
+    .aboutProject h1{
+        font-size: 30px;
+        font-weight: 400 !important;
+    }
 }

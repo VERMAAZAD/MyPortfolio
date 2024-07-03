@@ -31,29 +31,26 @@
 .sticky {
   position: absolute;
   top: 0px;
-  display: none;
 }
 .slidebar {
   position: absolute;
-  top: 0;
-  width: 60px;
+  top: 0px;
+  width: 200px;
   height: 100vh;
-  background: #fff;
-  overflow: hidden;
+  background: #2a2929;
   transition: 0.5s;
 }
-.slidebar:hover {
-  width: 250px;
-}
+
 .slidebar ul {
   position: relative;
   height: 100vh;
+  margin-top: 50px;
 }
 .slidebar ul li {
   list-style: none;
 }
 .slidebar ul li:hover {
-  background-color: #f3f3f3;
+  background-color: #191919;
 }
 .slidebar ul li a {
   position: relative;
@@ -67,29 +64,44 @@
   justify-content: center;
   align-items: center;
   min-width: 60px;
-  height: 60px;
-  font-size: 1.5em;
-  color: #333;
+  height: 50px;
+  font-size: 1.2em;
+  color: white;
 }
 .slidebar ul li a .text {
   position: relative;
   height: 60px;
   display: flex;
+  color: #d97f12;
   align-items: center;
   font-size: 1em;
-  color: #0e0101;
   text-transform: uppercase;
-  /*for manage space in letters*/
   letter-spacing: 0.05em;
 }
-@media only screen and (max-width: 576px) {
+.hideSidebar {
+  color: white;
+  font-size: 27px;
+  position: absolute;
+  top: -40px;
+  right: 10px;
+}
+.menuBar {
+  display: none;
+  font-weight: 800;
+}
+@media only screen and (max-width: 768px) {
   .right {
     display: none;
+  }
+  .menuBar {
+    display: block;
   }
   .navbar {
     flex-direction: row-reverse;
   }
-  .sticky {
-    display: block;
+}
+@media only screen and (max-width: 576px) {
+  .navbar {
+    padding: 0px 40px;
   }
 }

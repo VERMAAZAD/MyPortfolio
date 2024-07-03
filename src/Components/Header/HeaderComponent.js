@@ -8,18 +8,18 @@ const HeaderComponet = [
 export default HeaderComponet;
 
 export const Burger = [
-  { id: 1, title: "About", link: "about", iClass: "fa-brands fa-instagram" },
+  { id: 1, title: "Home", link: "home", iClass: "fa-solid fa-house" },
+  { id: 2, title: "About", link: "about", iClass: "fa-regular fa-address-card" },
   {
-    id: 2,
+    id: 3,
     title: "Projects",
     link: "projects",
-    iClass: "fa-solid fa-house-chimney",
+    iClass: "fa-solid fa-diagram-project",
   },
-  { id: 3, title: "Resume", link: "resume", iClass: "fa-regular fa-comments" },
   {
     id: 4,
     title: "Contact",
     link: "contact",
-    iClass: "fa-solid fa-chart-simple",
+    iClass: "fa-regular fa-address-book",
   },
 ];

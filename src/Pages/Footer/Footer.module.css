@@ -8,3 +8,13 @@ padding: 5% 0%;
   font-weight: 500;
   letter-spacing: 3px;
 }
+@media only screen and (max-width:768px){
+  .ResumeSection {
+      font-size: 14px;
+    }
+}
+@media only screen and (max-width:576px){
+  .ResumeSection {
+      font-size: 10px;
+    }
+}

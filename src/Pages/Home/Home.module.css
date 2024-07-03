@@ -55,3 +55,15 @@
 .summarySection {
   margin: 0px 100px;
 }
+@media only screen and (max-width: 576px){
+  .about{
+    height: 60vh;
+  }
+  .intro h1{
+    font-size: 20px;
+  }
+  .intro h1 span{
+    font-size: 30px;
+  }
+  
+}

@@ -1,46 +1,62 @@
-.aboutSection{
-    /* height: 90vh; */
+.content {
+  margin: 4% 10%;
 }
-.content{
-    margin: 4% 10%;
+.content h1 {
+  border-bottom: 4px solid #d97f12;
+  display: inline-block;
+  margin-bottom: 10px;
 }
-.content h1{
-    border-bottom:4px solid #d97f12;
-    display: inline-block;
-    margin-bottom: 10px;
-
+.content p {
+  font-size: 20px;
+  word-spacing: 3px;
 }
-.content p{
-    font-size: 20px;
-    word-spacing: 3px;
+.content p span {
+  color: #d97f12;
 }
-.content p span{
-    color: #d97f12;
+center h2 {
+  border-bottom: 3px solid #d97f12;
+  display: inline-block;
 }
-.skills{
-    margin: 2% 20%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.skills {
+  margin: 2% 20%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-.language{
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-    justify-content: center;
-    align-items: center;
-    padding:  40px;
-    border-radius: 10px;
-    background-color: #232323;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.language {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #232323;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.language img{
-    height: 40px;
-    margin-bottom: 10px;
+.language img {
+  height: 40px;
+  margin-bottom: 10px;
 }
-@media only screen and (max-width: 968px){
-    .skills{
-        margin: 2%;
-    }
+.language:hover {
+  background-color: #d97f12;
+  color: black;
+}
+@media only screen and (max-width: 968px) {
+  .skills {
+    margin: 2%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .content h1 {
+    font-size: 27px;
+  }
+  .content p {
+    text-align: center;
+    font-size: 17px;
+  }
+  .content {
+    margin: 4% 5%;
+  }
 }

@@ -2,8 +2,11 @@ import React, { useEffect, useState } from "react";
 import styles from "./Header.module.css";
 import HeaderComponet, { Burger } from "./HeaderComponent";
 import { Link } from "react-scroll";
+import { CiMenuFries } from "react-icons/ci";
+import { RxCross2 } from "react-icons/rx";
 const Header = () => {
   const [sticky, setSticky] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);
   useEffect(() => {
     const handleBurgerMenu = () => {
       if (window.scrollY > 100) {
@@ -14,6 +17,7 @@ const Header = () => {
     };
     window.addEventListener("scroll", handleBurgerMenu);
   });
+
   return (
     <div className={`${sticky ? `${styles["navSection"]}` : ""}`}>
       <div className={styles["navbar"]}>
@@ -36,19 +40,26 @@ const Header = () => {
             );
           })}
         </div>
+        <h2 className={styles["menuBar"]} onClick={() => setShowSidebar(true)}>
+          <CiMenuFries />
+        </h2>
       </div>
-      <div className={styles["sticky"]}>
-        {/* <div className={styles["slidebar"]}>
+      <div
+        className={styles["sticky"]}
+        style={showSidebar ? { display: "block" } : { display: "none" }}
+      >
+        <div className={styles["slidebar"]}>
           <ul>
             {Burger.map(({ title, id, link, iClass }) => {
               return (
                 <li key={id}>
                   <Link
+                    onClick={() => setShowSidebar(false)}
                     activeClass="active"
                     to={link}
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={-110}
                     duration={500}
                   >
                     <span className={styles["icon"]}>
@@ -59,8 +70,16 @@ const Header = () => {
                 </li>
               );
             })}
+            <h3
+              className={styles["hideSidebar"]}
+              onClick={() => {
+                setShowSidebar(false);
+              }}
+            >
+              <RxCross2 />
+            </h3>
           </ul>
-        </div> */}
+        </div>
       </div>
     </div>
   );

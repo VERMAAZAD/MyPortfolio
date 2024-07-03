@@ -13,16 +13,16 @@ const Contact = () => {
       </fieldset>
       <div className={styles["contact_type"]}>
         <p>
-          <CgMail style={{ fontSize: "45px", color: "white" }} />
+          <CgMail  />
           Azadkumar@gmail.com
         </p>
         <p>
-          <FaPhoneAlt style={{ fontSize: "40px", color: "white" }} />
-          Azadkumar@gmail.com
+          <FaPhoneAlt />
+          +91-9729791096
         </p>
         <p>
-          <FaLocationDot style={{ fontSize: "40px", color: "white" }} />
-          Azadkumar@gmail.com
+          <FaLocationDot  />
+          Sirsa, Haryana
         </p>
       </div>
       <fieldset>

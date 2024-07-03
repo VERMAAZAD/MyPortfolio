@@ -6,8 +6,6 @@
   border-top-color: #dc9c53;
   box-sizing: border-box;
 }
-
-
 legend {
   font-size: 45px;
   margin: auto; /* to center */
@@ -24,12 +22,18 @@ legend {
 .contact_type p{
   border-radius: 10px;
   color: #dc9c53;
+  width: 400px;
   font-size: 25px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  padding: 20px 50px;
+  padding: 20px;
   background-color: #2c2c2c;
+}
+.contact_type p svg{
+  font-size: 40px;
+  color: white;
 }
 .contact_icons{
   font-size: 35px;
@@ -39,4 +43,24 @@ legend {
 .contact_icons a{
   text-decoration: none;
   color: white;
+}
+
+@media only screen and (max-width: 576px){
+    legend{
+      font-size: 30px;
+    }
+    .contact_type{
+      padding: 30px;
+    }
+    .contact_type p{
+      font-size: 20px;
+      padding: 15px 10px ;
+    }
+    .contact_icons a{
+      font-size: 25px;
+    }
+    .contact_type p svg{
+      font-size: 30px;
+    }
+
 }
