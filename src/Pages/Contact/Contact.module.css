@@ -1,0 +1,42 @@
+.ContactSection {
+  color: white;
+}
+.ContactSection fieldset {
+  border: 3px solid transparent;
+  border-top-color: #dc9c53;
+  box-sizing: border-box;
+}
+
+
+legend {
+  font-size: 45px;
+  margin: auto; /* to center */
+  padding: 0 30px;
+  font-weight: 600;
+}
+.contact_type{
+  padding: 4% 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+.contact_type p{
+  border-radius: 10px;
+  color: #dc9c53;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 50px;
+  background-color: #2c2c2c;
+}
+.contact_icons{
+  font-size: 35px;
+  display: flex;
+  gap: 20px;
+}
+.contact_icons a{
+  text-decoration: none;
+  color: white;
+}

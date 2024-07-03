@@ -1,0 +1,19 @@
+.projectSection{
+    margin: 4% 10%;
+    /* height: 100vh; */
+    color: white;
+}
+.project{
+    border: 1px solid red;
+    padding: 20px;
+    text-align: center;
+}
+.aboutProject{
+    color: white;
+}
+.allproject{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}

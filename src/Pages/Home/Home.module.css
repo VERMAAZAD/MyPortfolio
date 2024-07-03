@@ -1,0 +1,57 @@
+.about {
+  height: 80vh;
+}
+.HomeSection {
+  padding: 0% 10%;
+  height:100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+.intro h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.intro h1 span {
+  color: #d97f12;
+  font-size: 50px;
+  font-weight: 500;
+}
+.intro button {
+  margin-top: 20px;
+  background-color: transparent;
+  color: #d97f12;
+  border: none;
+  border: 2px solid #d97f12;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.intro button:hover{
+  background-color: #d97f12;
+  color: #191919;
+  font-weight: 600;
+}
+.intro button:active{
+  background-color: #d8a367;
+}
+.image {
+  height: 400px;
+  width: 300px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+.summarySection {
+  margin: 0px 100px;
+}
