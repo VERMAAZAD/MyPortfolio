@@ -8,12 +8,36 @@
     margin-bottom: 20px;
 }
 .project{
-    border: 1px solid red;
     padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     text-align: center;
+    border-radius: 10px;
+    border: 1px solid #fda63c;
+    background-color: #292828;
 }
 .aboutProject{
+    margin-top: 30px;
     color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.aboutProject button{
+    background-color: #191919;
+    padding: 8px 20px;
+    outline: none;
+    color: #d97f12;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 15px;
+    border: 1px solid #d97f12;
+}
+.aboutProject button:hover{
+    background-color: #d97f12;
+    color: black;
+}
+.aboutProject button:active{
+    background-color: #d9923a;
 }
 .allproject{
     width: 100%;

@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Contact.module.css";
-import { CgMail } from "react-icons/cg";
-import { FaPhoneAlt, FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { FaPhoneAlt, FaWhatsapp, FaInstagram, FaMailBulk } from "react-icons/fa";
 import { FaLocationDot, FaLinkedinIn } from "react-icons/fa6";
 import { CiTwitter } from "react-icons/ci";
 
@@ -13,7 +12,7 @@ const Contact = () => {
       </fieldset>
       <div className={styles["contact_type"]}>
         <p>
-          <CgMail  />
+          <FaMailBulk  />
           Azadkumar@gmail.com
         </p>
         <p>

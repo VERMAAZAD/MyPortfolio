@@ -31,7 +31,7 @@ const Header = () => {
                   to={link}
                   spy={true}
                   smooth={true}
-                  offset={-70}
+                  offset={-110}
                   duration={500}
                 >
                   {title}

@@ -10,7 +10,7 @@ const Home = () => {
           <h1> I'M <span>Azad Kumar</span></h1>
           <p>
             <ReactTyped
-              strings={["Full Stack Developer"]}
+              strings={["Frontend Developer , MERN Developer"]}
               typeSpeed={100}
               backSpeed={100}
               loop

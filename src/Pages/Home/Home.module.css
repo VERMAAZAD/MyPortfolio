@@ -23,7 +23,7 @@
 }
 .intro h1 span {
   color: #d97f12;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: 500;
 }
 .intro button {
@@ -35,6 +35,9 @@
   padding: 10px 20px;
   font-size: 20px;
   cursor: pointer;
+}
+.intro p{
+  font-size: 25px;
 }
 .intro button:hover{
   background-color: #d97f12;
